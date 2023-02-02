@@ -1,7 +1,7 @@
 export default function Attribute() {
   return (
-    <div>
-      <p className=" text-[11px] text-center">
+    <footer>
+      <p className="text-[11px] text-center bg-neutral-blue-700 p-4 rounded-md">
         Challenge by{" "}
         <a
           className="text-attribute"
@@ -16,6 +16,6 @@ export default function Attribute() {
         </a>
         .
       </p>
-    </div>
+    </footer>
   );
 }

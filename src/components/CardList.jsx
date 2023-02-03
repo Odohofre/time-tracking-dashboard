@@ -1,5 +1,5 @@
 import info from "../assets/data.json";
-import Card from "./Card";
+import CardItem from "./CardItem";
 import { v4 as uuidv4 } from "uuid";
 
 export default function CardList() {
@@ -7,7 +7,7 @@ export default function CardList() {
     <ul>
       {info.map(({ title, timeframes: { daily, weekly, monthly } }) => (
         <li key={uuidv4()}>
-          <Card
+          <CardItem
             title={title}
             current={daily.current}
             previous={daily.previous}

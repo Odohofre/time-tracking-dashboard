@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./CardItem";
 import ProfileCard from "./ProfileCard";
 import CardList from "./CardList";
 

@@ -1,7 +1,7 @@
 import work from "../assets/images/icon-work.svg";
 import ellipsis from "../assets/images/icon-ellipsis.svg";
 
-export default function Card({title, daily, current, previous}) {
+export default function Card({title, current, previous}) {
   return (
     <div className="#faffff relative rounded-2xl h-40 bg-[#ff8864] mt-10 overflow-hidden ">
       <div className="h-1/4 z-10">

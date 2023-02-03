@@ -17,6 +17,7 @@ module.exports = {
           care: "#f1c65b",
         },
         "neutral-blue": {
+          50: '#fcffff',
           100: "#bdc1ff",
           200: "#6f76c8",
           700: "#1c1f4a",

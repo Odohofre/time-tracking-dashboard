@@ -39,7 +39,7 @@ export default function CardItem({ title, current, previous }) {
           src={data[title].image}
           width={76}
           className="absolute -top-3 right-4"
-          alt="A mail bag"
+          alt={title}
         />
       </div>
 

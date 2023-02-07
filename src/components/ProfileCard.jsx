@@ -6,6 +6,7 @@ export default function ProfileCard() {
       <div className="flex items-center w-full h-2/3 space-x-5 rounded-2xl bg-primary-blue px-6 py-10">
         <img
           src={Jeremy}
+          alt="Jeremy's face"
           className="w-20 h-auto rounded-full border-4"
           width={80}
           height={80}

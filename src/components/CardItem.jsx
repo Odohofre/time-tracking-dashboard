@@ -2,7 +2,7 @@ import ellipsis from "../assets/images/icon-ellipsis.svg";
 
 import { work, exercise, play, care, social, study } from "./ImageList";
 
-export default function CardItem({ title, color, current, previous }) {
+export default function CardItem({ title, current, previous }) {
   const data = {
     Work: {
       color: "bg-[#ff8c66]",

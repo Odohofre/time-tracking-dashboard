@@ -1,13 +1,43 @@
-import work from "../assets/images/icon-work.svg";
 import ellipsis from "../assets/images/icon-ellipsis.svg";
 
-export default function CardItem({title, current, previous}) {
+import { work, exercise, play, care, social, study } from "./ImageList";
+
+export default function CardItem({ title, color, current, previous }) {
+  const data = {
+    Work: {
+      color: "bg-[#ff8c66]",
+      image: work,
+    },
+    Play: {
+      color: "bg-[#56c2e6]",
+      image: play,
+    },
+    Study: {
+      color: "bg-[#ff5c7c]",
+      image: study,
+    },
+    Exercise: {
+      color: "bg-[#4acf81]",
+      image: exercise,
+    },
+    Social: {
+      color: "bg-[#7536d3]",
+      image: social,
+    },
+    "Self Care": {
+      color: "bg-[#f1c65b]",
+      image: care,
+    },
+  };
+
   return (
-    <div className="#faffff relative rounded-2xl h-40 bg-[#ff8864] mt-10 overflow-hidden ">
+    <div
+      className={`relative rounded-2xl h-40 mt-10 overflow-hidden ${data[title].color}`}
+    >
       <div className="h-1/4 z-10">
         <img
-          src={work}
-          width={79}
+          src={data[title].image}
+          width={76}
           className="absolute -top-3 right-4"
           alt="A mail bag"
         />

@@ -8,7 +8,7 @@ export default function Layout() {
   const handleClick = (event) => setTimeframe(event.currentTarget.value);
 
   return (
-    <main className="w-full mx-auto  mb-20">
+    <main className="w-full max-w-5xl xl:grid xl:grid-cols-4 xl:grid-rows-1 xl:gap-x-6 mx-auto mb-20">
       <ProfileCard onClick={handleClick} timeframe={timeframe} />
       <CardList timeframe={timeframe} />
     </main>

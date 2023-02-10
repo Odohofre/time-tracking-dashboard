@@ -5,8 +5,8 @@ export default function ProfileCard({ timeframe, onClick }) {
   const buttons = ["Daily", "Weekly", "Monthly"];
 
   return (
-    <div className="flex flex-col rounded-2xl bg-neutral-blue-700 overflow-hidden h-56">
-      <div className="flex items-center w-full h-2/3 space-x-5 rounded-2xl bg-primary-blue px-6 py-10">
+    <div className="flex flex-col rounded-2xl xl:col-span-1 xl:row-span-2 bg-neutral-blue-700 overflow-hidden h-56 xl:h-full xl:pb-6">
+      <div className="flex xl:flex-col items-center xl:items-start xl:justify-between w-full h-2/3 space-x-5 xl:space-x-0 rounded-2xl bg-primary-blue px-6 py-10 xl:pt-7 xl:pb-16">
         <img
           src={Jeremy}
           alt="Jeremy's face"
@@ -14,14 +14,16 @@ export default function ProfileCard({ timeframe, onClick }) {
           width={80}
           height={80}
         />
-        <div className="">
-          <span className=" text-neutral-blue-100/90 text-sm">Report For</span>
-          <h1 className="text-2xl font-light  text-neutral-blue-50">
+        <div className="xl:mt-5">
+          <span className=" text-neutral-blue-100/80 text-sm xl:text-base">
+            Report For
+          </span>
+          <h1 className="text-2xl xl:text-4xl font-light  text-neutral-blue-50">
             Jeremy Robson
           </h1>
         </div>
       </div>
-      <ul className="flex justify-between font-normal h-1/3 text-lg space-x- py-6 px-6">
+      <ul className="flex xl:flex-col justify-between xl:justify-start xl:space-y-5 font-normal h-1/3 text-lg py-6 xl:py- px-6">
         {buttons.map((btn) => (
           <li key={uuidv4()}>
             <button

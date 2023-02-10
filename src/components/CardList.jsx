@@ -9,7 +9,7 @@ export default function CardList({timeframe='daily'}) {
         <li key={uuidv4()}>
           <CardItem
             title={title}
-            time={timeframe}
+            timefr={timeframe}
             current={timeframes[timeframe].current}
             previous={timeframes[timeframe].previous}
           />

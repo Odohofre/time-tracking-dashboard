@@ -1,12 +1,8 @@
-import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Jeremy from "../assets/images/image-jeremy.png";
 
-export default function ProfileCard() {
-  const [timeframe, setTimeframe] = useState("Daily");
-
+export default function ProfileCard({ timeframe, onClick }) {
   const buttons = ["Daily", "Weekly", "Monthly"];
-  const handleClick = (event) => setTimeframe(event.currentTarget.textContent);
 
   return (
     <div className="flex flex-col rounded-2xl bg-neutral-blue-700 overflow-hidden h-56">
@@ -30,11 +26,12 @@ export default function ProfileCard() {
           <li key={uuidv4()}>
             <button
               className={
-                timeframe == btn
+                timeframe == btn.toLowerCase()
                   ? "text-neutral-blue-50"
                   : "text-neutral-blue-200 hover:text-neutral-blue-50"
               }
-              onClick={handleClick}
+              onClick={onClick}
+              value={btn.toLowerCase()}
             >
               {btn}
             </button>

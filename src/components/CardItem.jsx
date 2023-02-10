@@ -2,14 +2,12 @@ import ellipsis from "../assets/images/icon-ellipsis.svg";
 
 import { work, exercise, play, care, social, study } from "./ImageList";
 
-export default function CardItem({ title, current, previous, timefr }) {
-
+export default function CardItem({ title, current, previous, time }) {
   const time = {
-    daily: 'Yesterday',
-    weekly: 'Last Weekly',
-    monthly: 'Last Month',
-  }
-
+    daily: "Yesterday",
+    weekly: "Last Weekly",
+    monthly: "Last Month",
+  };
 
   const data = {
     Work: {
@@ -59,7 +57,7 @@ export default function CardItem({ title, current, previous, timefr }) {
         <div className="flex w-full justify-between items-center font-light">
           <span className="text-3xl">{`${current}hrs`}</span>
           <span className="text-neutral-blue-100 text-base">
-            {`${time[timefr]}- ${previous}hrs`}
+            {`${time[time]}- ${previous}hrs`}
           </span>
         </div>
       </div>

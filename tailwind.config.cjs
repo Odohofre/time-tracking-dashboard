@@ -17,7 +17,7 @@ module.exports = {
           care: "#f1c65b",
         },
         "neutral-blue": {
-          50: '#fcffff',
+          50: "#fcffff",
           100: "#bdc1ff",
           200: "#6f76c8",
           700: "#1c1f4a",
@@ -28,6 +28,9 @@ module.exports = {
         Rubik: ["Rubik", "sans-serif"], // font-weights: 300, 400, 500
       },
     },
+  },
+  future: {
+    hoverOnlyWhenSupported: true,
   },
   plugins: [],
 };
